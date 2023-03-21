@@ -1,11 +1,19 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Footer from './sections/Footer'
+import Navbar from './sections/Navbar'
+import Wrapper from './sections/wrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function App() {
   return (
-    <main>app</main>
+    <div className='main-contianer'>
+      <div className='app'>
+        <Navbar />
+        <Wrapper />
+        <Footer />
+      </div>
+    </div>
   )
 }
